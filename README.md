@@ -3,9 +3,23 @@
 ## An exploration of Lending Club's loan data from 2007-2018 
 
 
+EDA
+
+categorize features - borrower features (income, employment, inquiries, home ownership), loan features- (date, interest, grade, hardship, status)
+
+interest rates by grade - boxplots
 
 return on investments (including losses for 'charged off') by loan grade for non-current loans
 expected return vs actual on loans paid off early
+
+interest rate by homeownership
+
+grade? vs income? vs employment title? vs dti?
+
+hardship outcomes?
+recoveries for hardship flag? 
+
+
 
 check for rejected status?? - very few - drop
 interest rates correlate directly to grade?
