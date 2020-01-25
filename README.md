@@ -11,10 +11,10 @@ Loan data provided by LendingClub.com on their loan returns from 2007 to 2018 in
 
 The full dataset is reduced to subset of "completed" loans that have been either Fully Paid or Charged Off. The investor perspective outcomes for all these loans are are visualised in a boxplot broken down by grade and term:
 
-<img src='/images/%profit_grade_box.png'>
+<img src='/images/profit_grade_box.png'>
 
 A conservative investment scenario is simulated with all loans from the year 2013 with an investment starategy of selecting 1000 loans graded either A or B and loan term of 36 months. The simulation is run 1000 times and provides a normally distributed return with mean 10.1% and standard deviation of 0.5
 
-<img src = '/images/%return_mc_hist.png'>
+<img src = '/images/return_mc_hist.png'>
 
 Note: investment return is over the loan **lifetime** not an annual return.
