@@ -3,29 +3,18 @@
 ## An exploration of Lending Club's loan data from 2007-2018 
 
 
-EDA
+### The Cold Foot Investor
 
-categorize features - borrower features (income, employment, inquiries, home ownership), loan features- (date, interest, grade, hardship, status)
+This repo contains the companion notebook (https://github.com/ktzioumis/Lending-Club/blob/master/Cold-Foot-Investor.ipynb) to this blog post: https://medium.com/analytics-vidhya/the-cold-foot-investor-82da6c0baff0
 
-interest rates by grade - boxplots
+Loan data provided by LendingClub.com on their loan returns from 2007 to 2018 including current and past loans. The dataset was obtained form Kaggle.com here https://www.kaggle.com/wendykan/lending-club-loan-data
 
-return on investments (including losses for 'charged off') by loan grade for non-current loans
-expected return vs actual on loans paid off early
+The full dataset is reduced to subset of "completed" loans that have been either Fully Paid or Charged Off. The investor perspective outcomes for all these loans are are visualised in a boxplot broken down by grade and term:
 
-interest rate by homeownership
+<img src='/images/%profit_grade_box.png'>
 
-grade? vs income? vs employment title? vs dti?
+A conservative investment scenario is simulated with all loans from the year 2013 with an investment starategy of selecting 1000 loans graded either A or B and loan term of 36 months. The simulation is run 1000 times and provides a normally distributed return with mean 10.1% and standard deviation of 0.5
 
-hardship outcomes?
-recoveries for hardship flag? 
+<img src = '/images/%return_mc_hist.png'>
 
-
-
-check for rejected status?? - very few - drop
-interest rates correlate directly to grade?
-good vs. bad loans? (what to do with current loans? only paid off or charged off? all "bad" stauses binned together) - classifier? (its what everyone does)
-interest rate calculator reverse engineering (disregard grade?- external factors only)
-as above grade classifier - external factors only
-geography? (racial makeup??)
-can i reverse engineer gender somehow? (m vs f disbalanced jobs {nurses vs drivers} with similar income levels  - compare interest rates/grading?)
-loan purpose cleanup - NLP?
+Note: investment return is over the loan **lifetime** not an annual return.
